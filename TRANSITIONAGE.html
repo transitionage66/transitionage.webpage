@@ -1,0 +1,424 @@
+<DOCUTYPE!>
+    <!-- saved from url=(0031)https://Transition.org/ -->
+    <html  lang="en-US" style="--lqd-mobile-sec-height:0px;">
+        <head itemscope="itemscope" itemtype="http://schema.org/WebSite"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="profile" href="https://gmpg.org/xfn/11">
+            <meta name="mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-title" content="Transition">
+            <link rel="pingback" href="https://Transition.org/xmlrpc.php">
+            <title>TRANSITIONAGE</title>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/4.7.0/css/font-awesome.css"/>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <link rel="icon" type="image/x-icon" href="favicon.ico">
+            <style>
+                body{
+                    margin: 0;
+                    text-decoration: none;
+                    padding: 0;
+                }
+                p{
+                    margin-left: 10px;
+                }
+                #top{
+                    background-image:url("Follow.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                    height: 80%;
+                    justify-content: center;
+                }
+                .top-logo{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100px;
+                    height: 90px;
+                    margin-top: -5%;
+                }
+                footer{
+                    color: whitesmoke;
+                    text-decoration: none;
+                    background-color: #202329;
+                    color: rgba(255,255,255,0.75);
+                    background-position: bottom;
+                    background-size: cover;
+                    /*padding-top: 110px;*/
+                    /*padding-bottom: 55px;*/
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    padding: 20px;
+                    margin-top: 0%;
+                }
+                .footer-logo{
+                    width: 40%;
+                    height: 60%;
+                    margin-left: -5%;
+                }
+                .about > .footer-logo{
+                    position: absolute;
+                    display: inline-flexbox;
+                }
+                .mtn-icon{
+                    border-radius: 8PX;
+                    width: 33PX;
+                    height: 32PX;
+                    margin-left: 28px;
+                }
+                .airtel-icon{
+                    width: 90PX;
+                    height: 50PX;
+                    margin-left: 0px;
+                    margin-top: 8px;
+                    
+                }
+                .about{
+                    text-decoration: none;
+                    margin-left: 40%;
+                    margin-right: 10%;
+                    text-align: left;
+                    display: block;
+                    line-height: 20px;
+                }
+
+                .mail-icon{
+                    height: 32px;
+                    width: 33px;
+                    border-radius: 9px;
+                    margin-left: 27px;
+                } 
+                .mail{
+                    margin-top: -3px;
+                }
+                .address-icon{
+                    height: 32px;
+                    width: 35px;
+                    margin-left: 8%;
+                }
+                .address{
+                    line-height: 20px;
+                    margin-top: 26px;
+                }
+                .vission-icon{
+                    height: 32px;
+                    width: 35px;
+                    margin-left: 8%;
+                }
+                .mission-icon{
+                    height: 25px;
+                    width: 20px;
+                    margin-left: 8%;
+                }
+                .vission{
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    margin-top: 3%;
+                    margin-left: 5%;
+                }
+                iframe{
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    margin-bottom: 2px;
+                    border-radius: 10px;
+                }
+                #top > .dd{
+                    display: inline-flexbox;
+                }
+                #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: right;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 750px;
+  font-size: 30px;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+            </style>
+        </head>
+        <body>
+            <header id="top">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#about">About</a>
+                    <a href="#we do">Services</a>
+                    <a href="#contacts">Contact</a>
+                  </div>
+                  
+                  <button class="openbtn" onclick="openNav()">☰ </button> 
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("mySidepanel").style.width = "250px";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("mySidepanel").style.width = "0";
+                  }
+                  </script>
+                <img style="top: 10px;" class="top-logo" src="fb 1.png">
+                  <div class="icon-bar">
+                    <a href="https://www.facebook.com/transitionage" class="facebook"><i class="fa fa-facebook"></i></a> 
+                    <a href="https://twitter.com/TRANSITIONAGE?t=otyxrPV-PBIBUOFoEQHPpFQ&s=09" class="twitter"><i class="fa fa-twitter"></i></a> 
+                    <a href="file:///C:/Users/Ronnie%20Mutebi/.vscode/TRANSITIONAGE.html" class="google"><i class="fa fa-google"></i></a> 
+                    <a href="https://www.instagram.com/transitionage_/" class="linkedin"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@transitionage" class="youtube"><i class="fa fa-youtube"></i></a> 
+                  </div>
+            </header>
+            <div class="vision">
+                <span style="display: inline-flex;" ><img class="vission-icon" src="vision.png">
+                    <h3 class="vision">Vision</h3>
+                </span>
+                    <p style="margin-left: 3%;  margin-top: -1%; " >To have a generation of youth with a direction.</p>
+            </div>
+            <div style="margin-left: -8%;" class="mission">
+                <span style="display:flex;"> <img class="mission-icon" src="mission.png">
+                    <h3>Mission</h3>
+                </span>
+                    <p style="margin-left: 10%; margin-top: -10px;" >To help youth prevet what has not happened yet rather than canging what has already happened.</p>
+            </div>
+            <h2 id="we do">What we do</h2>
+
+<button class="accordion">Youth Camps</button>
+<div class="panel">
+  <p></p>
+  <img width="30%" height="30%" src="conf.JPG">
+  <img width="30%" height="30%" src="camp.jpg">
+</div>
+
+<button class="accordion">Youth conferences</button>
+<div class="panel">
+  <p></p>
+  <img width="600" height="300" src="conf 1.jpg" download>
+  <img width="402" height="300" src="conf 2.jpg" download>
+</div>
+
+<button class="accordion">counselling & Guidance</button>
+<div class="panel">
+  <p></p>
+  <img width="30%" height="30%" src="cancel.jpg">
+</div>
+
+<button class="accordion">Outreaches</button>
+<div class="panel">
+  <p></p>
+  <img width="30%" height="30%" src="outr.jpg">
+  <img width="30%" height="30%" src="outr1.jpg">
+  <img width="30%" height="30%" src="chil.jpg">
+  <img width="30%" height="30%" src="chill.jpg">
+  <img width="30%" height="30%" src="chilll.jpg">
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<p></p>
+            <iframe width="390" height="215" src="https://www.youtube.com/embed/89CaFh_XlmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="390" height="215" src="https://www.youtube.com/embed/KyMsPMzo6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="390" height="215" src="https://www.youtube.com/embed/sOL8nYkpehY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="390" height="215" src="https://www.youtube.com/embed/sOL8nYkpehY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="390" height="215" src="https://www.youtube.com/embed/BVmsziAm784" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="390" height="215" src="https://www.youtube.com/embed/fabhDkPEjsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="team">
+                </div>
+                        </div>
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                        <script>
+                            // Get the button
+                            let mybutton = document.getElementById("myBtn");
+                            
+                            // When the user scrolls down 20px from the top of the document, show the button
+                            window.onscroll = function() {scrollFunction()};
+                            
+                            function scrollFunction() {
+                              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                                mybutton.style.display = "block";
+                              } else {
+                                mybutton.style.display = "none";
+                              }
+                            }
+                            
+                            // When the user clicks on the button, scroll to the top of the document
+                            function topFunction() {
+                              document.body.scrollTop = 0;
+                              document.documentElement.scrollTop = 0;
+                            }
+                            </script>
+            <footer style="bottom: 0%;">
+                <img style="margin-top: -3%;" class="footer-logo" src="fb 3.png" >
+                <span style="margin-top: -27%; " class="about">
+                    <h3 id="about">About Us</h3>
+                    <p>TRANSITIONAGE is an NGO that focuses on mentoring Youth in their transition age(Teenagers)</p>
+                    <p>We do this through sharing testimonies of people that have made mistakes before and have  overcome. These testimonies help to have these youth learn from those mistakes, relate with these testimonies and<br> know that they are not alone.</p>
+                    <p>We know that people in their Transition Age are going through a phase of self Discovery and so alot is going on in their lives. They are faced with alot of behaviors that grow into habits and end up becoming addictions which once not managed can destroy them completely and so TRANSITIONAGE is here not to judge them, but help them on how to avoid getting into anything that will affect them and destroy their future.</p>                
+                    <p>TRANSITIONAGE, does guidance and counselling, conferences, seminars, youth camps, mentorship programs, one on one sessions, all tailored to help the youth in their transition age go through this phase</p>
+                    <p>Psalm 119:9</p>
+                </span>
+                <form style="margin-top: -20%;" id="contacts">
+                    <h4 style="text-decoration: underline; ">Contact Us</h4>
+                    <div class="mtn">
+                        <span style="display:inline-flex;"> <img class="mtn-icon" src="mtn.jpg">
+                            <p style="margin-left: 10%;  margin-top: auto; margin-bottom: auto; " >+256772065961</p>
+                        </span>
+                    </div>
+                         <br>
+                    <div class="airtel">                        
+                        <span style="display:inline-flex; margin-top: -1%; "><img class="airtel-icon" src="airtel.png">
+                        <p style="margin-left: -10px; margin-top: auto; margin-bottom: auto; line-height: 100%; " >+256704896980</p>
+                        </span>
+                    </div>
+                    <div class="mail">                        
+                        <span style="display:inline-flex; margin-top: 2%; "><img class="mail-icon" src="mail.jpg">
+                        <p style="margin-left: 24px; margin-top: auto; margin-bottom: auto; line-height: 100%; " >transitionage2021@gmail.com</p>
+                        </span>
+                    </div>
+                    <div class="address">
+                        <span style="display:inline-flex;"> <img class="address-icon" src="address.png">
+                            <p style="margin-left: 8%;  margin-top: auto; margin-bottom: auto; " >Kakiri,Along Hoima Road Wakiso District</p>
+                        </span>
+                    </div>
+                </form>
+            </footer>
+        </body>
+    </html>
