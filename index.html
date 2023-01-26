@@ -19,11 +19,96 @@
                     text-decoration: none;
                     padding: 0;
                 }
+                /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
                 p{
                     margin-left: 10px;
                 }
                 #top{
-                    background-image:url("Follow.png");
+                    /*background-image:url("Follow.png");*/
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: top;
@@ -38,68 +123,7 @@
                     height: 90px;
                     margin-top: -5%;
                 }
-                footer{
-                    color: whitesmoke;
-                    text-decoration: none;
-                    background-color: #202329;
-                    color: rgba(255,255,255,0.75);
-                    background-position: bottom;
-                    background-size: cover;
-                    /*padding-top: 110px;*/
-                    /*padding-bottom: 55px;*/
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    padding: 20px;
-                    margin-top: 0%;
-                }
-                .footer-logo{
-                    width: 40%;
-                    height: 60%;
-                    margin-left: -5%;
-                }
-                .about > .footer-logo{
-                    position: absolute;
-                    display: inline-flexbox;
-                }
-                .mtn-icon{
-                    border-radius: 8PX;
-                    width: 33PX;
-                    height: 32PX;
-                    margin-left: 28px;
-                }
-                .airtel-icon{
-                    width: 90PX;
-                    height: 50PX;
-                    margin-left: 0px;
-                    margin-top: 8px;
-                    
-                }
-                .about{
-                    text-decoration: none;
-                    margin-left: 40%;
-                    margin-right: 10%;
-                    text-align: left;
-                    display: block;
-                    line-height: 20px;
-                }
-
-                .mail-icon{
-                    height: 32px;
-                    width: 33px;
-                    border-radius: 9px;
-                    margin-left: 27px;
-                } 
-                .mail{
-                    margin-top: -3px;
-                }
-                .address-icon{
-                    height: 32px;
-                    width: 35px;
-                    margin-left: 8%;
-                }
-                .address{
-                    line-height: 20px;
-                    margin-top: 26px;
-                }
+               
                 .vission-icon{
                     height: 32px;
                     width: 35px;
@@ -262,6 +286,133 @@
 
 .openbtn:hover {
   background-color:#444;
+}footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
 }
             </style>
         </head>
@@ -285,7 +436,54 @@
                     document.getElementById("mySidepanel").style.width = "0";
                   }
                   </script>
-                <img style="top: 10px;" class="top-logo" src="fb 1.png">
+                 <img style="top: 10px;" class="top-logo" src="fb 1.png">
+                <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Follow.png" style="width:100%">
+  <div class="text">Follow us on all platforms to stay updated</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
                   <div class="icon-bar">
                     <a href="https://www.facebook.com/transitionage" class="facebook"><i class="fa fa-facebook"></i></a> 
                     <a href="https://twitter.com/TRANSITIONAGE?t=otyxrPV-PBIBUOFoEQHPpFQ&s=09" class="twitter"><i class="fa fa-twitter"></i></a> 
@@ -311,8 +509,8 @@
 <button class="accordion">Youth Camps</button>
 <div class="panel">
   <p></p>
-  <img width="30%" height="30%" src="conf.JPG">
-  <img width="30%" height="30%" src="camp.jpg">
+  <img width="30%" height="auto" src="conf.JPG">
+  <img width="30%" height="auto" src="camp.jpg">
 </div>
 
 <button class="accordion">Youth conferences</button>
@@ -385,40 +583,53 @@ for (i = 0; i < acc.length; i++) {
                               document.documentElement.scrollTop = 0;
                             }
                             </script>
-            <footer style="bottom: 0%;">
-                <img style="margin-top: -3%;" class="footer-logo" src="fb 3.png" >
-                <span style="margin-top: -27%; " class="about">
-                    <h3 id="about">About Us</h3>
-                    <p>TRANSITIONAGE is an NGO that focuses on mentoring Youth in their transition age(Teenagers)</p>
-                    <p>We do this through sharing testimonies of people that have made mistakes before and have  overcome. These testimonies help to have these youth learn from those mistakes, relate with these testimonies and<br> know that they are not alone.</p>
-                    <p>We know that people in their Transition Age are going through a phase of self Discovery and so alot is going on in their lives. They are faced with alot of behaviors that grow into habits and end up becoming addictions which once not managed can destroy them completely and so TRANSITIONAGE is here not to judge them, but help them on how to avoid getting into anything that will affect them and destroy their future.</p>                
-                    <p>TRANSITIONAGE, does guidance and counselling, conferences, seminars, youth camps, mentorship programs, one on one sessions, all tailored to help the youth in their transition age go through this phase</p>
-                    <p>Psalm 119:9</p>
-                </span>
-                <form style="margin-top: -20%;" id="contacts">
-                    <h4 style="text-decoration: underline; ">Contact Us</h4>
-                    <div class="mtn">
-                        <span style="display:inline-flex;"> <img class="mtn-icon" src="mtn.jpg">
-                            <p style="margin-left: 10%;  margin-top: auto; margin-bottom: auto; " >+256772065961</p>
-                        </span>
-                    </div>
-                         <br>
-                    <div class="airtel">                        
-                        <span style="display:inline-flex; margin-top: -1%; "><img class="airtel-icon" src="airtel.png">
-                        <p style="margin-left: -10px; margin-top: auto; margin-bottom: auto; line-height: 100%; " >+256704896980</p>
-                        </span>
-                    </div>
-                    <div class="mail">                        
-                        <span style="display:inline-flex; margin-top: 2%; "><img class="mail-icon" src="mail.jpg">
-                        <p style="margin-left: 24px; margin-top: auto; margin-bottom: auto; line-height: 100%; " >transitionage2021@gmail.com</p>
-                        </span>
-                    </div>
-                    <div class="address">
-                        <span style="display:inline-flex;"> <img class="address-icon" src="address.png">
-                            <p style="margin-left: 8%;  margin-top: auto; margin-bottom: auto; " >Kakiri,Along Hoima Road Wakiso District</p>
-                        </span>
-                    </div>
-                </form>
-            </footer>
+            <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>TRANSITIONAGE is an NGO that focuses on mentoring Youth in their transition age(Teenagers).</p>
+           <p> We do this through sharing testimonies of people that have made mistakes before and have overcome. These testimonies help to have these youth learn from those mistakes, relate with these testimonies and
+            know that they are not alone.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>+256704896980</a>
+         </div>
+         <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>+256772065961</a>
+          </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>transitionage66@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Youth camps</a></div>
+       <div><a href="#">Youth conferences</a></div>
+       <div><a href="#">Counselling and Guidence</a></div>
+       <div><a href="#">Outreaches</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#">
+         <input type="text" placeholder="Say Something">
+         <input a href="mailto:transitionage66@gmail.com"type="submit" name="" value="Send"></a>
+         <div class="media-icons">
+           <a href="https://www.facebook.com/transitionage"><i class="fab fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/transitionage_/"><i class="fab fa-instagram"></i></a>
+           <a href="https://twitter.com/TRANSITIONAGE?t=otyxrPV-PBIBUOFoEQHPpFQ&s=09"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.youtube.com/@transitionage"><i class="fab fa-youtube"></i></a>
+           <a href="https://www.transitionage.org"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2023 <a href="#">Transitionage</a> All rights reserved</p>
+   </div>
+ </footer>
         </body>
     </html>
