@@ -441,7 +441,7 @@ iframe{
         </head>
         <body>
           <header class="main" id="top">
-          
+            <div class="background" style="margin-top: 0% auto;">
                 <div id="mySidepanel" class="sidepanel">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                     <a href="#about">About</a>
@@ -461,7 +461,7 @@ iframe{
                   }
                   </script>
                  <img style="top: 10px;" class="top-logo" src="fb 1.png">
-                 <div class="background" style="margin-top: -13%;"></div>
+                 </div>
                 <div class="slideshow-container">
                   <div class="icon-bar">
                     <a href="https://www.facebook.com/transitionage" class="facebook"><i class="fa fa-facebook"></i></a> 
@@ -494,6 +494,7 @@ iframe{
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
     <div id="caption"></div>
+
   </div>
   <img id="myImg" src="camp.jpg" alt="Snow" style="width:100%;max-width:300px">
 
@@ -502,6 +503,28 @@ iframe{
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
     <div id="caption"></div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
   </div>
 </div>
 
