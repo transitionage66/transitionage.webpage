@@ -21,12 +21,23 @@
                 p{
                     margin-left: 10px;
                 }
-                #top{
+                .background{
                     background-image:url("Follow.png");
                     height: 100%;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    display: block;
+  height: 800px;
+  left: -5px;
+  top:-5px;
+  bottom:-5px;
+  right: -5px;     
+z-index: 0;
+  margin:0px auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
                 }
                 .top-logo{
                     display: block;
@@ -429,7 +440,8 @@ iframe{
             </style>
         </head>
         <body>
-            <header class="main" id="top">
+          <header class="main" id="top">
+          
                 <div id="mySidepanel" class="sidepanel">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                     <a href="#about">About</a>
@@ -449,9 +461,8 @@ iframe{
                   }
                   </script>
                  <img style="top: 10px;" class="top-logo" src="fb 1.png">
+                 <div class="background" style="margin-top: -13%;"></div>
                 <div class="slideshow-container">
-
-
                   <div class="icon-bar">
                     <a href="https://www.facebook.com/transitionage" class="facebook"><i class="fa fa-facebook"></i></a> 
                     <a href="https://twitter.com/TRANSITIONAGE?t=otyxrPV-PBIBUOFoEQHPpFQ&s=09" class="twitter"><i class="fa fa-twitter"></i></a> 
@@ -459,7 +470,6 @@ iframe{
                     <a href="https://www.instagram.com/transitionage_/" class="linkedin"><i class="fa fa-instagram"></i></a>
                     <a href="https://www.youtube.com/@transitionage" class="youtube"><i class="fa fa-youtube"></i></a> 
                   </div>
-            </header>
             <div class="vision">
                 <span style="display: inline-flex;" ><img class="vission-icon" src="vision.png">
                     <h3 class="vision">Vision</h3>
