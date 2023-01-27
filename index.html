@@ -4,15 +4,14 @@
         <head itemscope="itemscope" itemtype="http://schema.org/WebSite"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <link rel="profile" href="https://gmpg.org/xfn/11">
             <meta name="mobile-web-app-capable" content="yes">
             <meta name="apple-mobile-web-app-capable" content="yes">
             <meta name="apple-mobile-web-app-title" content="Transition">
-            <link rel="pingback" href="https://Transition.org/xmlrpc.php">
             <title>TRANSITIONAGE</title>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/4.7.0/css/font-awesome.css"/>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                         <link rel="icon" type="image/x-icon" href="favicon.ico">
+
             <style>
                 body{
                     margin: 0;
@@ -338,7 +337,95 @@ footer a:hover{
     padding-left: 0;
   }
 }
+iframe{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
             </style>
         </head>
         <body>
@@ -390,32 +477,116 @@ footer a:hover{
 <button class="accordion">Youth Camps</button>
 <div class="panel">
   <p></p>
-  <img width="30%" height="auto" src="conf.JPG">
-  <img width="30%" height="auto" src="camp.jpg">
+  <img id="myImg" src="conf.JPG" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <img id="myImg" src="camp.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
 </div>
 
 <button class="accordion">Youth conferences</button>
 <div class="panel">
   <p></p>
-  <img width="600" height="300" src="conf 1.jpg" download>
-  <img width="402" height="300" src="conf 2.jpg" download>
+  <img id="myImg" src="conf 2.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
 </div>
 
 <button class="accordion">counselling & Guidance</button>
 <div class="panel">
   <p></p>
-  <img width="30%" height="30%" src="cancel.jpg">
+  <img id="myImg" src="cancel.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
 </div>
 
 <button class="accordion">Outreaches</button>
 <div class="panel">
+  <img id="myImg" src="outr.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <img id="myImg" src="outr1.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <img id="myImg" src="chil.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <img id="myImg" src="chill.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <img id="myImg" src="chilll.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
   <p></p>
-  <img width="30%" height="30%" src="outr.jpg">
-  <img width="30%" height="30%" src="outr1.jpg">
-  <img width="30%" height="30%" src="chil.jpg">
-  <img width="30%" height="30%" src="chill.jpg">
-  <img width="30%" height="30%" src="chilll.jpg">
 </div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -433,12 +604,12 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 <p></p>
-            <iframe width="390" height="215" src="https://www.youtube.com/embed/89CaFh_XlmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="390" height="215" src="https://www.youtube.com/embed/KyMsPMzo6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="390" height="215" src="https://www.youtube.com/embed/sOL8nYkpehY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="390" height="215" src="https://www.youtube.com/embed/sOL8nYkpehY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="390" height="215" src="https://www.youtube.com/embed/BVmsziAm784" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="390" height="215" src="https://www.youtube.com/embed/fabhDkPEjsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/89CaFh_XlmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/KyMsPMzo6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/sOL8nYkpehY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/sOL8nYkpehY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/BVmsziAm784" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="370" height="215" src="https://www.youtube.com/embed/fabhDkPEjsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="team">
                 </div>
                         </div>
