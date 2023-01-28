@@ -1,7 +1,8 @@
 <DOCUTYPE!>
     <!-- saved from url=(0031)https://Transition.org/ -->
     <html  lang="en-US" style="--lqd-mobile-sec-height:0px;">
-        <head itemscope="itemscope" itemtype="http://schema.org/WebSite"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <head itemscope="itemscope" itemtype="http://schema.org/WebSite">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="mobile-web-app-capable" content="yes">
@@ -26,22 +27,22 @@
                     background-repeat: no-repeat;
                     background-position: top;
                     background-size: contain;
-                    background-origin: content-box;
                     height: 100%;
-                    margin: 0 auto !important;
                     display: inline-flexbox;
                 }
+                .alike{
+                  display: inline-flex;
+                }
                 .top-logo{
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 100px;
-                    height: 90px;
+                  width: 60px;
+                  height: auto;
+                  display: none;
+                  margin-left: auto;
+                  margin-right: auto;
                 }
-                .main{
-                  display:flexbox;
-                }
-               
+               .cont{
+                margin-top: -60%;
+               }
                 .vission-icon{
                     height: 32px;
                     width: 35px;
@@ -66,6 +67,8 @@
                 }
                 #top > .dd{
                     display: inline-flexbox;
+                }
+                .cont{
                 }
                 #myBtn {
   display: none;
@@ -206,13 +209,6 @@
   background-color:#444;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-  text-decoration: none;
-}
 footer{
   width: 100%;
   bottom: 0;
@@ -429,6 +425,83 @@ iframe{
     width: 100%;
   }
 }
+                      /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
 .iframes{
   display: block;
     align-items: center;
@@ -437,8 +510,8 @@ iframe{
             </style>
         </head>
         <body>
-          <header class="main" id="top">
-            <div class="background" style="margin-top: 0% auto; margin-left: 0%; margin-right: 0%;">
+            <div class="background">
+              <div class="alike">
                 <div id="mySidepanel" class="sidepanel">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                     <a href="#about">About</a>
@@ -457,8 +530,9 @@ iframe{
                     document.getElementById("mySidepanel").style.width = "0";
                   }
                   </script>
-                 <img style="top: 10px;" class="top-logo" src="fb 1.png">
-                 </div>
+                 <img class="top-logo" src="fb 1.png">
+              </div>
+              </div>
                 <div class="slideshow-container">
                   <div class="icon-bar">
                     <a href="https://www.facebook.com/transitionage" class="facebook"><i class="fa fa-facebook"></i></a> 
@@ -467,7 +541,7 @@ iframe{
                     <a href="https://www.instagram.com/transitionage_/" class="linkedin"><i class="fa fa-instagram"></i></a>
                     <a href="https://www.youtube.com/@transitionage" class="youtube"><i class="fa fa-youtube"></i></a> 
                   </div>
-                  <div>
+                    <div class="cont">
             <div class="vision">
                 <span style="display: inline-flex;" ><img class="vission-icon" src="vision.png">
                     <h3 class="vision">Vision</h3>
@@ -478,15 +552,15 @@ iframe{
                 <span style="display:flex;"> <img class="mission-icon" src="mission.png">
                     <h3>Mission</h3>
                 </span>
-                    <p style="margin-left: 10%; margin-top: -10px;" >To help youth prevet what has not happened yet rather than canging what has already happened.</p>
+                    <p style="margin-left: 10%; margin-top: -10px;" >To help youth prevent what has not happened yet rather than canging what has already happened.</p>
             </div>
-                  </div>
-            <h2 id="we do">What we do</h2>
+                    </div>
+            <h2 id="we do">Our Services</h2>
 
 <button class="accordion">Youth Camps</button>
 <div class="panel">
   <p></p>
-  <img id="myImg" src="conf.JPG" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="conf.JPG" alt="having a speech" style="width:100%;max-width:300px">
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -495,7 +569,7 @@ iframe{
     <div id="caption"></div>
 
   </div>
-  <img id="myImg" src="camp.jpg" alt="Snow" style="width:100%;max-width:300px">
+  <img id="myImg" src="camp.jpg" alt="Discussions" style="width:100%;max-width:300px">
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -699,7 +773,7 @@ for (i = 0; i < acc.length; i++) {
       <div><a href="#">Outreaches</a></div>
     </div>
     <div class="right box">
-      <div class="topic">Subscribe us</div>
+      <div class="topic">Chat with us</div>
       <form action="#">
         <input type="text" placeholder="Say Something">
         <a href="mailto:transitionage66@gmail.com"><input method="GET"  enctype="text/plain" type="submit" name="" value="Send"></a>
